@@ -1,0 +1,8 @@
+<div class="card" *ngIf="hero">
+    <h4 class="header"><b>{{hero.name | uppercase}} Details</b></h4> 
+    <div class="detail"><span>id: </span>{{hero.id}}<br />
+      <label>name:
+        <input [(ngModel)]="hero.name" placeholder="name"/>
+      </label>
+    </div>
+</div>
